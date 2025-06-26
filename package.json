@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint -c ./.eslintrc --ext .js --fix ."
+    "lint": "eslint -c ./.eslintrc --ext .js --fix .",
+    "postinstall": "yarn build"
   },
   "author": {
     "name": "CodeX Team",
