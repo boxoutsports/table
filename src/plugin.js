@@ -35,6 +35,18 @@ import { IconTable, IconTableWithHeadings, IconTableWithoutHeadings, IconStretch
  * Table block for Editor.js
  */
 export default class TableBlock {
+  static get sanitize() {
+    return {
+      b: true,
+      a: {
+        href: true,
+      },
+      i: true,
+      br: {},
+      div: true,
+    };
+  }
+
   /**
    * Notify core that read-only mode is supported
    *

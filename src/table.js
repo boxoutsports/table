@@ -428,7 +428,7 @@ export default class Table {
      /**
       * Check if the number of rows has reached the maximum allowed rows specified in the configuration,
       * and if so, exit the function to prevent adding more columns beyond the limit.
-      */  
+      */
     if (this.config && this.config.maxrows && this.numberOfRows >= this.config.maxrows && addRowButton) {
       return;
     }
@@ -691,7 +691,7 @@ export default class Table {
    * @param {KeyboardEvent} event - keydown event
    */
   onKeyDownListener(event) {
-    if (event.key === 'Tab') {
+    if (event.key === 'Tab' || event.key === 'Backspace') {
       event.stopPropagation();
     }
   }
